@@ -60,11 +60,11 @@ If ($HostStatus -eq $False) {
 
 ###### COPY Configs to host machine
 Write-Host -ForegroundColor Cyan -Object "Copying configs to c:\Lability\Configurations" 
-Copy-item -Path C:\PS-AutoLab-Env\Configurations\* -recurse -Destination C:\Lability\Configurations -force
+Copy-item -Path C:\windows-server-2016-core-networking\Configurations\* -recurse -Destination C:\Lability\Configurations -force
 
 #### Temp fix until Lability updates version with new media File
 #### Copying new media file manually
-Copy-item -Path C:\PS-AutoLab-Env\media.json -Destination 'C:\Program Files\WindowsPowershell\Modules\Lability\0.10.0\config'
+Copy-item -Path C:\windows-server-2016-core-networking\media.json -Destination 'C:\Program Files\WindowsPowershell\Modules\Lability\0.10.0\config'
 
 $HostStatus=Test-LabHostConfiguration
 If ($HostStatus -eq $False) {
