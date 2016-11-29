@@ -12,19 +12,7 @@ Clear-Host
 Write-Host -ForegroundColor Green -Object @"
 
     This is the Setup-Lab script. This script will perform the following:
-    * Run the configs to generate the required .mof files
-    Note! - If there is an error creating the .mofs, the setup will fail
-    
-    * Run the lab setup
-    Note! If this is the first time you have run this, it can take several
-    hours to download the .ISO's and resources.
-    This only occurs the first time.
-
-    **Possible problem, if the downloads finish but the script doesn't continue (pauses)
-        Hit the return key once and it will continue
-
-    *You will be able to wipe and rebuild this lab without needing to perform
-    the downloads again.
+    * Run the configs to generate the required .mof files. If there is an error creating the .mofs, the setup will fail
 
     Note! You will need to provide an Administrator password TWICE - on for the config, one for the localmachine account.
 
@@ -34,18 +22,9 @@ Write-Host -ForegroundColor Green -Object @"
 
     To stop the lab VM's:
     .\Shutdown-lab.ps1
-    
-    When the configurations have finished, you can checkpoint the VM's with:
-    .\Snapshot-Lab.ps1
-
-    To quickly rebuild the labs from the checkpoint, run:
-    .\Refresh-Lab.ps1
 
     To destroy the lab to build again:
     .\Wipe-Lab.ps1
-
-    To enable Internet access for the VM's, run:
-    .\Enable-Internet.ps1
 
 "@
 

@@ -15,23 +15,10 @@ Write-Host -ForegroundColor Green -Object @"
     
     * Start the Lab environment
     
-    Note! If this is the first time you have run this, it can take up to an hour
-    for the DSC configs to apply. 
-    This only occurs the first time.
-
-    *You will be able to wipe and rebuild this lab without needing to perform
-    the configuration process again if you:
-
-    Next Steps:
-
+    Note! If this is the first time you have run this, it will take about 30 minutes for the DSC configs to apply. 
+   
     To stop the lab VM's:
     .\Shutdown-lab.ps1
-
-    When the configurations have finished, you can checkpoint the VM's with:
-    .\Snapshot-Lab.ps1
-
-    To quickly rebuild the labs from the checkpoint, run:
-    .\Refresh-Lab.ps1
 
 "@
 
@@ -47,12 +34,6 @@ Write-Host -ForegroundColor Green -Object @"
 
     To stop the lab VM's:
     .\Shutdown-lab.ps1
-
-    When the configurations have finished, you can checkpoint the VM's with:
-    .\Snapshot-Lab.ps1
-
-    To quickly rebuild the labs from the checkpoint, run:
-    .\Refresh-Lab.ps1
 
 "@
 
