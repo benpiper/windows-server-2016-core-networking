@@ -1,6 +1,6 @@
 
 # Pluralsight PowerShell Automated Lab Environment
-This is an automated lab environment build tool to support learners in designing and building a virtual lab environment for the course *Implementing and Securing Windows Server 2016 Core Networking*.
+This is an automated lab environment build tool to support learners in designing and building a virtual lab environment for the course *[Implementing and Securing Windows Server 2016 Core Networking](https://www.pluralsight.com/courses/windows-server-2016-core-networking)*.
 
 The configurations for the VM are written in Microsoft PowerShell DSC and deployed using [VirtualEngine Lability](https://github.com/VirtualEngine/Lability). This tool will completely build a lab environment from scratch.
 
